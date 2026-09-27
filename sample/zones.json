@@ -1,0 +1,16 @@
+{
+  "budget": 1,
+  "block_error_code": "E_NO_BLOCK",
+  "duplicate_error_code": "E_DUPLICATE_BLOCK",
+  "sealed_error_code": "E_SEALED",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "blocks": {}, "stats": {}, "dirty": [], "sealed": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "open", "block": "b1" },
+    { "id": 2, "kind": "append", "block": "b1", "value": 5 },
+    { "id": 3, "kind": "open", "block": "b2" },
+    { "id": 4, "kind": "append", "block": "b1", "value": 3 },
+    { "id": 5, "kind": "append", "block": "b2", "value": 7 },
+    { "id": 6, "kind": "seal", "block": "b1" }
+  ]
+}
